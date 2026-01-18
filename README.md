@@ -24,23 +24,18 @@ An MCP server that enables an AI agent to connect to and control a VPS (Virtual 
 
 ## Usage
 
-1.  Build the project:
-    ```bash
-    npm install
-    npm run build
-    ```
+Add the following configuration to your MCP client (e.g., Claude Desktop config file):
 
-2.  Run the server (via MCP client configuration):
-    ```json
-    {
-      "mcpServers": {
-        "vps": {
-          "command": "node",
-          "args": ["/path/to/vps-mcp/dist/index.js"]
-        }
-      }
+```json
+{
+  "mcpServers": {
+    "vps": {
+      "command": "npx",
+      "args": ["-y", "vps-mcp"]
     }
-    ```
+  }
+}
+```
 
 ## Support
 
