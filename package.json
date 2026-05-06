@@ -2,6 +2,7 @@
   "name": "vps-mcp",
   "version": "1.0.2",
   "description": "MCP server for VPS management via SSH",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "vps-mcp": "dist/index.js"
@@ -26,14 +27,14 @@
   },
   "homepage": "https://github.com/HarjjotSinghh/vps-mcp#readme",
   "devDependencies": {
-    "@types/node": "^25.0.9",
+    "@types/node": "^25.6.0",
     "@types/ssh2": "^1.15.5",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.25.2",
-    "dotenv": "^17.2.3",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
     "ssh2": "^1.17.0",
-    "zod": "^4.3.5"
+    "zod": "^4.4.3"
   }
 }
